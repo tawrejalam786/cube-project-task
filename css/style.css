@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* === Navbar === */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: linear-gradient(to right, #016630, #032E15);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a,
+.dropbtn {
+  text-decoration: none;
+  color: #162456;
+  background: none;
+  border: none;
+  /* font-size: 16px; */
+  /* font-weight: 500; */
+  cursor: pointer;
+  padding: 8px 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16.18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 1000;
+}
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f4f4f4;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.actions .shop-btn {
+  background: linear-gradient(to right, #032E15, #016630);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.actions .shop-btn:hover {
+  opacity: 0.9;
+}
+
+/* === Hero Section === */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('../assets/images/hero-banner.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.hero-text {
+  flex: 1 1 50%;
+  padding: 20px;
+}
+
+.hero-text .badge {
+  background: linear-gradient(to left, #032E15, #016630);
+  display: inline-block;
+  padding: 8px 16px 8px 16px;
+  gap: 8px;
+  border-radius: 1000px;
+  font-size: 14px;
+  border: 0.5px;
+  margin-bottom: 15px;
+  color: white;
+  text-align: center;
+}
+
+.badge-inner{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+
+}
+
+.hero-text h1 {
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 56px;
+  line-height: 112.00000000000001%;
+  letter-spacing: -1.33px;
+  color: #032E15;
+}
+
+.stats {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.power {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 72px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  color: rgba(1, 102, 48, 1);
+
+}
+
+.power2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 22px;
+  line-height: 104%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  color: rgba(13, 84, 43, 1);
+
+}
+
+.stats div {
+  text-align: left;
+}
+
+ .hero-text .shop-btn {
+  background: linear-gradient(to right, #032E15, #016630);
+  color: #fff;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18.2px;
+  line-height: 24px;
+  letter-spacing: 0px;
+
+}
+
+.hero-text .shop-btn:hover {
+  opacity: 0.9;
+}
+
+.hero-image {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.hero-image img {
+  width: 200px;
+  max-width: 100%;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.6));
+}
+
+/* === Features Section === */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 30px 10px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.feature {
+  flex: 1 1 150px;
+  margin: 10px 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stats {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    background: #fff;
+    margin-top: 5px;
+  }
+}

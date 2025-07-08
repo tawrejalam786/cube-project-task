@@ -101,6 +101,14 @@ body {
   opacity: 0.9;
 }
 
+.humburger {
+    display: none;
+  }
+
+.sidebar {
+  display: none;
+}
+
 /* === Hero Section === */
 .hero {
   position: relative;
@@ -255,6 +263,115 @@ body {
 
 /* === Responsive === */
 @media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  /* Hamburger Button */
+  .humburger {
+    display: block;
+  }
+
+  .humburger .fa-bars {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px 20px;
+    /* position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1001; */
+  }
+
+  .sidebar .logo {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  /* Sidebar Styles */
+    .sidebar {
+      display: block;
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      left: -250px;
+      top: 0;
+      background: linear-gradient(to left, #032E15, #016630);
+      overflow-x: hidden;
+      transition: left 0.3s ease;
+      z-index: 1000;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    .sidebar ul li {
+      padding: 15px 20px;
+    }
+
+    .sidebar ul li a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown ul li{
+      padding: 10px 10px 5px 10px;
+    }
+
+    .dropdown .dropdown-menu > li a {
+      color: #333;
+      border-bottom: 1px dotted #032E15;
+      margin-bottom: 8px;
+      line-height: 25px;
+    }
+
+    /* Active Sidebar */
+    .sidebar.active {
+      left: 0;
+    }
+
+    /* Dropdown Styles */
+    .dropdown-menu {
+      list-style: none;
+      padding-left: 20px;
+      display: none;
+      background-color: #ffffff;
+      transition: all 0.3s ease;
+    }
+
+     /* Dropdown */
+    .dropdown-menu {
+      list-style: none;
+      padding-left: 20px;
+      display: none;
+    }
+
+    .dropdown.open .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown a.toggle::after {
+      content: ' ▾';
+      float: right;
+      transition: transform 0.3s;
+    }
+
+    .dropdown.open a.toggle::after {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu li a {
+      color: #333;
+    }
+
+  .actions {
+    display: none;
+  }
+
   .hero-content {
     flex-direction: column;
     text-align: center;
@@ -279,3 +396,5 @@ body {
     margin-top: 5px;
   }
 }
+
+/* === On Desktop === */

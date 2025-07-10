@@ -789,105 +789,106 @@ body {
 /* == Subscription Section == */
 
 .subscription-section {
-  background-color: #fff;
-}
+      /* background-color: #bda98f; */
+      border-radius: 20px;
+      overflow: hidden;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      margin-top: 30px;
+      background-image: url('../assets/images/artempodrez.png');
+    }
 
-.subscription-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  /* max-width: 1200px; */
-  margin: auto;
-  background-color: #bda98f; /* same brownish tone */
-    border-radius: 20px;
-  overflow: hidden;
-  padding: 40px 20px;
-}
+    .subscription-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-.text-content {
-  flex: 1 1 400px;
-  color: white;
-}
+    .text-content {
+      flex: 1 1 400px;
+      color: white;
+    }
 
-.text-content .tag {
-  font-size: 12px;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  color: #eaeaea;
-}
+    .text-content .tag {
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      color: #eaeaea;
+    }
 
-.text-content h2 {
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 20px;
-  color: #fff;
-}
+    .text-content h2 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+      color: #fff;
+    }
 
-.text-content h2 span {
-  font-weight: 700;
-}
+    .text-content h2 span {
+      font-weight: 700;
+    }
 
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 25px;
-}
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
 
-.tag-btn {
-  background: #ffffff;
-  color: #333;
-  border-radius: 999px;
-  padding: 8px 16px;
-  font-size: 14px;
-  font-weight: 500;
-  display: inline-block;
-}
+      .tag-btn {
+        background: #ffffff;
+        color: #333;
+        border-radius: 999px;
+        padding: 12px 35px;
+        font-size: 14px;
+        font-weight: 500;
+        display: inline-block;
+      }
 
-.subscribe-btn {
-  background-color: #005e3a;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 25px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
+    .subscribe-btn {
+      background-color: #005e3a;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
 
-.subscribe-btn:hover {
-  background-color: #00482e;
-}
+    .subscribe-btn:hover {
+      background-color: #00482e;
+    }
 
-.image-content {
-  flex: 1 1 300px;
-  text-align: center;
-  margin-top: 30px;
-}
+    .image-content {
+      flex: 1 1 300px;
+      text-align: center;
+      margin-top: 30px;
+    }
 
-.image-content img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
+    .image-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .subscription-container {
-    flex-direction: column;
-    text-align: center;
-  }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .subscription-container {
+        flex-direction: column;
+        text-align: center;
+      }
 
-  .text-content {
-    order: 2;
-  }
+      .text-content {
+        order: 2;
+      }
 
-  .image-content {
-    order: 1;
-  }
-}
+      .image-content {
+        order: 1;
+      }
+    }
 
 /* Responsive Fixes */
 @media (max-width: 768px) {
